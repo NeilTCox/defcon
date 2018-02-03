@@ -1,15 +1,20 @@
 body {
-  padding: 200px 250px 250px 250px;
-  background: linear-gradient(tomato, orange);
-  text-align: center;
+  padding: 50px 100px 50px 50px;
+  text-align: left;
   font-weight: bold;
   font: 20px "Trebuchet MS", Helvetica, sans-serif;
-
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 h1 {
-  color: white;
-  font: 100px "Trebuchet MS", Helvetica, sans-serif;
+  color: darkslategrey;
+  font: 40px "Trebuchet MS", Helvetica, sans-serif;
+}
+
+h3 {
+  color: tomato;
+  font: 27px "Trebuchet MS", Helvetica, sans-serif;
 }
 
 input {
@@ -18,7 +23,7 @@ input {
 
 
 p {
-  color: white;
+  color: darkslategrey;
   font: 18px "Courier New", Courier, monospace;
 }
 
