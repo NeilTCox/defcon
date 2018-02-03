@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Defcon', va: '921712' });
+  res.render('index', { title: 'DEFCON', va: '921712' });
 
 
 });
