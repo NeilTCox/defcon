@@ -4,21 +4,26 @@ body {
   text-align: center;
   font-weight: bold;
   font: 20px "Trebuchet MS", Helvetica, sans-serif;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
 }
 
 h1 {
   color: white;
+  text-align: center;
   font: 100px "Trebuchet MS", Helvetica, sans-serif;
 }
 
 input {
-    text-align: center;
+  width: 300px;  
+  text-align: center;
 }
 
 
 p {
   color: white;
+  text-align: center;
   font: 18px "Courier New", Courier, monospace;
 }
 
