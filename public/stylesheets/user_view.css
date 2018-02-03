@@ -1,34 +1,28 @@
 body {
-  padding: 180px 250px 250px 250px;
+  padding: 30px 30px 30px 30px;
   background: linear-gradient(tomato, orange);
-  text-align: center;
+  text-align: left;
   font-weight: bold;
   font: 20px "Trebuchet MS", Helvetica, sans-serif;
   background-repeat: no-repeat;
   background-attachment: fixed;
 
+
 }
 
 h1 {
   color: white;
-  text-align: center;
-  font: 100px "Trebuchet MS", Helvetica, sans-serif;
+  font: 50px "Trebuchet MS", Helvetica, sans-serif;
 }
 
 input {
-  width: 300px;
-  text-align: center;
+    text-align: center;
 }
 
-label {
-  color: white;
-  text-align: center;
-  font: 14px "Courier New", Courier, monospace;
-}
 
 p {
+  color: left;
   color: white;
-  text-align: center;
   font: 18px "Courier New", Courier, monospace;
 }
 
