@@ -1,9 +1,27 @@
 body {
-  padding: 50px;
-
+  padding: 200px 250px 250px 250px;
+  background: linear-gradient(tomato, orange);
   text-align: center;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font: 20px "Trebuchet MS", Helvetica, sans-serif;
+
 }
+
+h1 {
+  color: white;
+  font: 100px "Trebuchet MS", Helvetica, sans-serif;
+}
+
+input {
+    text-align: center;
+}
+
+
+p {
+  color: white;
+  font: 18px "Courier New", Courier, monospace;
+}
+
 
 a {
   color: #00B7FF;
