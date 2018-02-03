@@ -1,5 +1,5 @@
 body {
-  padding: 200px 250px 250px 250px;
+  padding: 180px 250px 250px 250px;
   background: linear-gradient(tomato, orange);
   text-align: center;
   font-weight: bold;
@@ -16,10 +16,15 @@ h1 {
 }
 
 input {
-  width: 300px;  
+  width: 300px;
   text-align: center;
 }
 
+label {
+  color: white;
+  text-align: center;
+  font: 14px "Courier New", Courier, monospace;
+}
 
 p {
   color: white;
