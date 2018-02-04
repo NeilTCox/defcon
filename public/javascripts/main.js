@@ -1,6 +1,6 @@
 alert('we in main folks');
 alert('we changed');
-function() {
+$(function() {
   $('.list-inline').on('click', '#shelterButton', function(event){
     alert('one');
     $("#locationId").addClass("hidden");
@@ -27,4 +27,4 @@ function() {
 
     $("#hospitalId").removeClass("hidden");
   });
-};
+});
