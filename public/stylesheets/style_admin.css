@@ -1,5 +1,5 @@
 body {
-  padding: 50px 100px 100px 100px;
+  padding: 150px 100px 100px 100px;
   background: linear-gradient(to bottom right, #2ACABA, #684BA6);
   text-align: left;
   font-weight: bold;
@@ -10,31 +10,29 @@ body {
 
 h1 {
   color: white;
-  font: 40px "Trebuchet MS", Helvetica, sans-serif;
+  font: 70px "Trebuchet MS", Helvetica, sans-serif;
 }
 
 h3 {
   color: white;
-  font: 27px "Trebuchet MS", Helvetica, sans-serif;
+  font: 27px "Courier New", Helvetica, sans-serif;
 }
 
 input {
-  text-align: center;
+  text-align: left;
+  font: 18px "Courier New", Courier, monospace;
 }
 
 p {
   color: darkslategrey;
-  font: 18px "Courier New", Courier, monospace;
+  font: 18px "Trebuchet MS", Courier, monospace;
 }
 
 a {
   color: #00B7FF;
 }
 
-.label {
-  color: white
-}
-
-#emailHelp {
-  color: white
+label {
+  color: darkslategrey;
+  font: 18px "Trebuchet MS", Courier, monospace;
 }
