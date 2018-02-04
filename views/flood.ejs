@@ -4,49 +4,62 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel='stylesheet' href='/stylesheets/user_view.css'/>
     <title>!!!FLASH FLOOD IN OC!!!</title>
+    <script   src="http://code.jquery.com/jquery-3.3.1.slim.min.js"   integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="   crossorigin="anonymous"></script>
     <script src="/javascripts/main.js"></script>
-
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   </head>
   <body>
 
     <div class="row">
-      <div class="col">
+      <div class="col-3">
       <img src="\images\flood_symbol.png" alt="FLOOD" style="width: 120px; height: 120px;">
       </div>
 
       <div class="col-6">
-        <h1 style="color: white;">EMERGENCY ALERT</h1>
-        <p><%= date_time%></p>
-        <p><%= alert_desc%></p>
+        <h1 style="color: white; text-align: center;">EMERGENCY ALERT</h1>
         <hr class="my-4">
       </div>
 
-    <div class="col">
-      <h1 class="text-right"style="font-size:40px; color: white;">AREA AFFECTED:</h1>
-      <p class="text-right"style="font-size:15px;"><%= city%></p>
+    <div class="col-3">
 
     </div>
   </div>
-  <div class="row">
 
-    </div>
-  </body>
-</html>
+  <div class="theMap">
+    <iframe id="locationId"
+      width="1000"
+      height="600"
+      frameborder="5" style="border:0"
+      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAeBv_EqcgfPPxQkZf947KvDUJLr94bvwM&q=<%= location %>" >
+    </iframe>
 
-  <div class="container bottomtwo">
-    <div class="row">
-      <div class="col">
+    <iframe id="hospitalId" class="hidden"
+    width="1000"
+    height="600"
+      frameborder="0" style="border:0"
+      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAeBv_EqcgfPPxQkZf947KvDUJLr94bvwM&q=hospital" >
+    </iframe>
 
-        <h3>MAP</h3>
-        <div class="btn-group" role="group" aria-label="Basic example">
-          <button type="button" class="btn btn-secondary btnshel">Shelter</button>
-          <button type="button" class="btn btn-secondary btnshel">Food</button>
-          <button type="button" class="btn btn-secondary btnshel">Water</button>
-        </div>
-        <div id="map"></div>
+    <iframe id="shelterId" class="hidden"
+    width="1000"
+    height="600"
+      frameborder="0" style="border:0"
+      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAeBv_EqcgfPPxQkZf947KvDUJLr94bvwM&q=emergency+shelter" >
+    </iframe>
+
+    <iframe id="foodId" class="hidden"
+    width="1000"
+    height="600"
+      frameborder="0" style="border:0"
+      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAeBv_EqcgfPPxQkZf947KvDUJLr94bvwM&q=grocery+store" >
+    </iframe>
   </div>
-  </div>
-  </div>
+
+  <ul class="list-inline">
+     <li class="list-inline-item"><i class="fa fa-home fa-fw btn" id="shelterButton"></i></li>
+     <li class="list-inline-item"><i class="fa fa-utensils fa-fw btn" id="foodButton"></i></li>
+     <li class="list-inline-item"><i class="fa fa-user-md fa-fw btn" id="hospitalButton"></i></li>
+  </ul>
 
     <div class="container bottomtwo" style="margin-top: 30px;">
       <div class="row">

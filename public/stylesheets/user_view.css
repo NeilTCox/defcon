@@ -10,6 +10,25 @@ body {
 
 }
 
+.theMap{
+  text-align: center;
+}
+
+.hidden{
+  display: none;
+}
+.list-inline{
+    text-align: center;
+}
+.list-inline > li{
+    text-align: center;
+    margin: 10px 110px 10px 110px;
+}
+.btn{
+    font-size: 40px;
+    color: white;
+}
+
 #map {
   height: 400px;
 }
@@ -31,7 +50,6 @@ h3 {
   color: white;
   font: 30px "Trebuchet MS", Helvetica, sans-serif;
 }
-
 
 
 input {
