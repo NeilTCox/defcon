@@ -38,7 +38,7 @@ router.get('/:type', function(req, res, next) {
     }
   }).then(success => {
     console.log('IN SUCCESS');
-    res.redirect('/');
+    res.render('/admin');
   });
 });
 
