@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 var session = require('client-sessions');
 
 var index = require('./routes/index');
+var kitten = require('./routes/kitten');
 var admin = require('./routes/admin');
 
 var app = express();
@@ -34,6 +35,7 @@ app.use(session({
 }));
 
 app.use('/', index);
+app.use('/kitten', kitten);
 app.use('/admin', admin)
 
 // catch 404 and forward to error handler
@@ -42,6 +44,9 @@ app.use(function(req, res, next) {
   err.status = 404;
   next(err);
 });
+
+
+
 
 // error handler
 app.use(function(err, req, res, next) {

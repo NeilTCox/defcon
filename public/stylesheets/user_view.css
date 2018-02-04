@@ -1,0 +1,43 @@
+body {
+  padding: 30px 30px 30px 30px;
+  background: linear-gradient(tomato, orange);
+  text-align: left;
+  font-weight: bold;
+  font: 20px "Trebuchet MS", Helvetica, sans-serif;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+
+}
+
+#map {
+  height: 100%;
+}
+
+.btn-group{
+  padding: 10px;
+}
+.btnshel{
+  margin-right: 10px;  }
+  
+
+h1 {
+  color: white;
+  font: 40px "Trebuchet MS", Helvetica, sans-serif;
+}
+
+input {
+    text-align: center;
+}
+
+
+p {
+  color: left;
+  color: white;
+  font: 18px "Courier New", Courier, monospace;
+}
+
+
+a {
+  color: #00B7FF;
+}

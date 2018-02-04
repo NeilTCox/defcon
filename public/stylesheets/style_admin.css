@@ -1,0 +1,33 @@
+body {
+  padding: 50px 100px 50px 50px;
+  text-align: left;
+  font-weight: bold;
+  font: 20px "Trebuchet MS", Helvetica, sans-serif;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+  color: darkslategrey;
+  font: 40px "Trebuchet MS", Helvetica, sans-serif;
+}
+
+h3 {
+  color: darkslategrey;
+  font: 27px "Trebuchet MS", Helvetica, sans-serif;
+}
+
+input {
+    text-align: center;
+}
+
+
+p {
+  color: darkslategrey;
+  font: 18px "Courier New", Courier, monospace;
+}
+
+
+a {
+  color: #00B7FF;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel='stylesheet' href='/stylesheets/user_view.css'/>
+    <title>nuclearstrike</title>
+    <script src="/javascripts/main.js"></script>
+
+  </head>
+  <body>
+
+    <div class="row">
+      <div class="col">
+      <img src="\images\flood.png" alt="ditto">
+      </div>
+
+      <div class="col-6">
+        <h1>EMERGENCY ALERT</h1>
+        <p><%= alert_desc%></p>
+        <hr class="my-4">
+      </div>
+
+    <div class="col">
+      <h1 class="text-right"style="font-size:60px;">96801</h1>
+      <p class="text-right" style="font-size:20px;">HONOLULU, HAWAII</p>
+
+    </div>
+  </div>
+
+    <div class="container bottomtwo">
+      <div class="row">
+        <div class="col-6">
+          <h3>Information</h3>
+          <p>When a nuclear bomb goes off, the area around the blast zone is scorched and pulverised with a blinding flash of light and heat.
+
+            The pressure wave that erupts from the bomb flattens all buildings around it everything in a miles-wide radius immediately gets contaminated with deadly radioactive fallout.
+
+            But the good news is that nuclear attacks do not always mean immediate death. They can and have been survived in the past.
+
+            When the United States dropped the world’s first nuclear bomb on Hiroshima in Japan in 1945 nearly twice as many people survived the blast than were killed, though the aftermaths haunted them for years to come.
+
+            ‘Ready’, the official US public campaign service for natural and man-made disasters, lists several steps needed to survive in such a nuclear catastophe.</p>
+        </div>
+
+        <div class="col-6">
+          <h3>Map</h3>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-secondary btnshel">Shelter</button>
+            <button type="button" class="btn btn-secondary btnshel">Food</button>
+            <button type="button" class="btn btn-secondary btnshel">Water</button>
+          </div>
+          <div id="map"></div>
+        </div>
+      </div>
+    </div>
+  <div class="row">
+
+    </div>
+  </body>
+
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKg1bLaMj-WD8T7zbkZ171gRLThI4EN48&libraries=places&callback=initMap" async defer></script>
+</html>
