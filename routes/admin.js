@@ -14,16 +14,20 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/:type', function(req, res, next) {
+  console.log('in ' + req.params.type + ' route');
   // send a notification
   client.createNotification({
     contents: {
       contents: {'en': 'Type: ' + req.params.type + ' // click for info'}
     },
+    specific: {
+      included_segments: ['All']
+    },
     attachments: {
       url: 'http://www.google.com'
     }
   }).then(success => {
-      alert('SUCCESS!!');
+      console.log('SUCCESS!');
       res.end();
   });
 });
