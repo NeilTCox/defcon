@@ -12,6 +12,18 @@ router.get('/', function(req, res, next) {
 
 
 router.get('/nuclearstrike', function(req, res, next){
-  res.render('nuclearstrike', { alert_desc: 'BALLISTIC MISSLE THREAT INBOUND TO HAWAII. SEEK IMMEDIATE SHELTER. THIS IS NOT A DRILL'});
+  res.render('nuclearstrike', { alert_desc: 'BALLISTIC MISSLE THREAT INBOUND TO US WEST COAST. SEEK IMMEDIATE SHELTER. THIS IS NOT A DRILL'});
 });
+
+router.get('/wildfire', function(req, res, next){
+  res.render('wildfire', { date_time:'02/04/2017 12:00PM',
+  city: 'IRVINE, ORANGE, FULLERTON, ANAHEIM, SANTA ANA, NEWPORT BEACH, COSTA MESA, TUSTIN, HUNTINGTON BEACH, BREA',
+   alert_desc: 'WILDFIRE EAST OF FWY 405, NORTH OF HWY ROUTE 55. EVACUATIONS OCCURRING. WATCH NEWS OR CALL 211.'});
+});
+
+
+router.get('/:disaster', function(req, res, next) {
+  res.render(req.params.disaster);
+});
+
 module.exports = router;

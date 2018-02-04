@@ -15,21 +15,29 @@ router.get('/', function(req, res, next) {
 
 
 router.get('/:type', function(req, res, next) {
-  console.log('in ' + req.params.type + ' route');
+  if (req.params.type == 'wildfire') {
+    var type = 'Wild Fire';
+  }
+  if (req.params.type == 'flood') {
+    var type = 'Flash Flood';
+  }
+  if (req.params.type == 'missile') {
+    var type = 'Missile Threat';
+  }
+
   // send a notification
   client.createNotification({
     contents: {
-      contents: {'en': 'Type: ' + req.params.type + ' // click for info'}
+      contents: {'en': 'Type: ' + type + ' // click for info'}
     },
     specific: {
       included_segments: ['All']
     },
     attachments: {
-      url: 'http://www.google.com'
+      url: `/${req.params.type}`
     }
   }).then(success => {
-      console.log('SUCCESS!');
-      res.end();
+    res.redirect('/admin_dash');
   });
 });
 
