@@ -1,5 +1,6 @@
 body {
-  background-color:coral ;
+  padding: 180px 250px 250px 250px;
+  background: linear-gradient(tomato, orange);
   text-align: center;
   font-weight: bold;
   font: 20px "Trebuchet MS", Helvetica, sans-serif;
@@ -29,6 +30,11 @@ input {
   text-align: center;
 }
 
+label {
+  color: white;
+  text-align: center;
+  font: 14px "Courier New", Courier, monospace;
+}
 
 p {
   color: white;

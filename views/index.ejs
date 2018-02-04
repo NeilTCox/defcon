@@ -15,15 +15,17 @@
       <div class="col">
         <h1><%= title %></h1>
         <p>Real time emergency information</p>
-
+          
+        <p><%= desc%></p>
         <form>
           <div class="form-group">
             <input type="zipcode" class="form-control" id="zipcode" aria-describedby="ZipcodeHelp" placeholder="Enter a zip code">
           </div>
-          <button type="submit" class="btn btn-danger">Get Notifications</button>
+        <label><%= info%></label>
+          <button type="submit" class="btn btn-danger"><%= submit%></button>
           <hr class="my-4">
 
-          <button type="submit" class="btn btn-danger">Use Current Location</button>
+          <button type="submit" class="btn btn-danger"><%= other_option%></button>
         </form>
         <br>
 
