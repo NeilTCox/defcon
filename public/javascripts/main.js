@@ -5,10 +5,8 @@ $(function() {
     $("#foodId").addClass("hidden");
 
     $("#shelterId").removeClass("hidden");
-
-
-
   });
+
   $('.list-inline').on('click', '#foodButton', function(event){
     $("#locationId").addClass("hidden");
     $("#hospitalId").addClass("hidden");
@@ -19,6 +17,7 @@ $(function() {
 
 
   });
+
   $('.list-inline').on('click', '#hospitalButton', function(event){
     $("#locationId").addClass("hidden");
     $("#shelterId").addClass("hidden");
@@ -27,4 +26,4 @@ $(function() {
     $("#hospitalId").removeClass("hidden");
 
   });
-})
+});

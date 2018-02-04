@@ -4,8 +4,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel='stylesheet' href='/stylesheets/user_view.css'/>
     <title>!!!WILDFIRE IN OC!!!</title>
+    <script   src="http://code.jquery.com/jquery-3.3.1.slim.min.js"   integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="   crossorigin="anonymous"></script>
     <script src="/javascripts/main.js"></script>
-
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   </head>
   <body>
 
@@ -24,43 +25,34 @@
     </div>
   </div>
 
-  <div class="container bottomtwo">
-    <div class="row">
-      <div class="col">
+  <div class="theMap">
+    <iframe id="locationId"
+      width="1000"
+      height="600"
+      frameborder="5" style="border:0"
+      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAeBv_EqcgfPPxQkZf947KvDUJLr94bvwM&q=<%= location %>" >
+    </iframe>
 
-        <h3>MAP</h3>
-        <div class="theMap">
-          <iframe id="locationId"
-            width="1000"
-            height="630"
-            frameborder="5" style="border:0"
-            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAeBv_EqcgfPPxQkZf947KvDUJLr94bvwM&q=<%= location %>" >
-          </iframe>
+    <iframe id="hospitalId" class="hidden"
+    width="1000"
+    height="600"
+      frameborder="0" style="border:0"
+      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAeBv_EqcgfPPxQkZf947KvDUJLr94bvwM&q=hospital" >
+    </iframe>
 
-          <iframe id="hospitalId" class="hidden"
-          width="1000"
-          height="630"
-            frameborder="0" style="border:0"
-            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAeBv_EqcgfPPxQkZf947KvDUJLr94bvwM&q=hospital" >
-          </iframe>
+    <iframe id="shelterId" class="hidden"
+    width="1000"
+    height="600"
+      frameborder="0" style="border:0"
+      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAeBv_EqcgfPPxQkZf947KvDUJLr94bvwM&q=emergency+shelter" >
+    </iframe>
 
-          <iframe id="shelterId" class="hidden"
-          width="1000"
-          height="630"
-            frameborder="0" style="border:0"
-            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAeBv_EqcgfPPxQkZf947KvDUJLr94bvwM&q=emergency+shelter" >
-          </iframe>
-
-          <iframe id="foodId" class="hidden"
-          width="1000"
-          height="630"
-            frameborder="0" style="border:0"
-            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAeBv_EqcgfPPxQkZf947KvDUJLr94bvwM&q=grocery+store" >
-          </iframe>
-        </div>
-
-      </div>
-    </div>
+    <iframe id="foodId" class="hidden"
+    width="1000"
+    height="600"
+      frameborder="0" style="border:0"
+      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAeBv_EqcgfPPxQkZf947KvDUJLr94bvwM&q=grocery+store" >
+    </iframe>
   </div>
 
   <ul class="list-inline">
@@ -86,10 +78,8 @@
 
       </div>
     </div>
-  <div class="row">
+    <div class="row">
 
     </div>
   </body>
-
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKg1bLaMj-WD8T7zbkZ171gRLThI4EN48&libraries=places&callback=initMap" async defer></script>
 </html>
