@@ -6,12 +6,12 @@ router.get('/', function(req, res, next) {
   res.render('admin_dash');
 });
 
-router.get('/admin/:location/:zip', function(req, res, next) {
+router.get('/:type/:zip', function(req, res, next) {
   var disaster = {
-    zip: req.params.zip,
-    location: req.params.location
-  };
-  res.send(zip);
+    type: req.params.type,
+    zip: req.params.zip
+  }
+  res.send(disaster);
 });
 
 module.exports = router;

@@ -1,4 +1,4 @@
-notifyMe();
+//notifyMe();
 
 function notifyMe() {
   // Let's check if the browser supports notifications
@@ -21,4 +21,14 @@ function notifyMe() {
   }
   // Finally, if the user has denied notifications and you
   // want to be respectful there is no need to bother them any more.
+}
+
+function createNotif(disaster) {
+  Push.create("[URGENT] Emergency!", {
+    body: 'Type: ' + disaster.type + ' // click for details',
+    timeout: 5000,
+    onClick: function() {
+      alert('clicked!!');
+    }
+  });
 }
