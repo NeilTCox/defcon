@@ -12,6 +12,7 @@ router.get('/', function(req, res, next) {
 
 });
 
+
 router.get('/nuclearstrike', function(req, res, next){
   res.render('nuclearstrike', { alert_desc: 'BALLISTIC MISSLE THREAT INBOUND TO HAWAII. SEEK IMMEDIATE SHELTER. THIS IS NOT A DRILL'});
 });
