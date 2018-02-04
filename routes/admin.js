@@ -34,7 +34,7 @@ router.post('/:type', function(req, res, next) {
       included_segments: ['All']
     },
     attachments: {
-      url: `https://dry-waters-89173.herokuapp.com/${req.params.type}/${req.body.location}`
+      url: `http://defconalerts.tech/${req.params.type}/${req.body.location}`
     }
   }).then(success => {
     console.log('IN SUCCESS');
