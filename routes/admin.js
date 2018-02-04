@@ -15,8 +15,6 @@ router.get('/', function(req, res, next) {
 
 
 router.post('/:type', function(req, res, next) {
-  console.log('IN ADMIN GET');
-  console.log(req.body.location);
   if (req.params.type == 'wildfire') {
     var type = 'Wild Fire';
   }
@@ -36,7 +34,7 @@ router.post('/:type', function(req, res, next) {
       included_segments: ['All']
     },
     attachments: {
-      url: `/${req.params.type}/${req.body.location}`
+      url: `https://dry-waters-89173.herokuapp.com/${req.params.type}/${req.body.location}`
     }
   }).then(success => {
     console.log('IN SUCCESS');

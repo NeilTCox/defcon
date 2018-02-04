@@ -11,6 +11,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/:disaster/:location', function(req, res, next) {
+  console.log(req.params.location);
   res.render(req.params.disaster, {location: req.params.location});
 });
 
