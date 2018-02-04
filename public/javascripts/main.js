@@ -1,22 +1,36 @@
 
-var map;
-var infowindow;
 
-var xhttp = new XMLHttpRequest();
+var userInput = document.getElementById('zipcode');
+var button = document.getElementById('submitButton');
 
-xhttp.open("GET", "https://www.zipcodeapi.com/rest/Jwl1xY6afHTksVXZQFETI3tgMsFfD9jFunWrTArwMC6aNqwNg3xJE1OesPtF7j7W/info.json/91767/degrees", true);
-xhttp.send();
 
-console.log(xhttp.responseText);
+button.addEventListener('click', userZip);
 
-function geoSuccess(position) {
-    var userLat = position.coords.latitude;
-    var userLong = position.coords.longitude;
 
-    console.log("user lat", userLat, "long", userLong);
+function userZip(){ // called when button clicked
+     return userInput.value;
 }
 
-navigator.geolocation.getCurrentPosition(geoSuccess);
+
+function convertZip(zipCode){
+    // converts zipcode to lat and long
+    console.log("Zipcode is", zipCode);
+
+    return {lat: 33.642534, lng: -117.84195}
+}
+
+//
+// function geoSuccess(position) {
+//     var userLat = position.coords.latitude;
+//     var userLong = position.coords.longitude;
+//
+//     console.log("user lat", userLat, "long", userLong);
+// }
+//
+// navigator.geolocation.getCurrentPosition(geoSuccess);
+
+var map;
+var infowindow;
 
 
 function initMap() {
