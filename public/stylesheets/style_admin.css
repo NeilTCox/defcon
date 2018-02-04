@@ -19,16 +19,22 @@ h3 {
 }
 
 input {
-    text-align: center;
+  text-align: center;
 }
-
 
 p {
   color: darkslategrey;
   font: 18px "Courier New", Courier, monospace;
 }
 
-
 a {
   color: #00B7FF;
+}
+
+.label {
+  color: white
+}
+
+#emailHelp {
+  color: white
 }

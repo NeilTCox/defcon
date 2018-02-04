@@ -1,7 +1,7 @@
 
 
-$(document).ready(function() {
-    $(".btn btn-primary").click(function(){
-      $("div").toggle();
-    });
+$(document).ready(function(){
+  $("button").click(function(){
+    $(".card").fadeOut();
+  });
 });
