@@ -5,17 +5,15 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <title><%= title %></title>
 
-    <link rel="manifest" href="/manifest.json">
-    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+    <link rel="manifest" href="/manifest.json" />
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
     <script>
       var OneSignal = window.OneSignal || [];
-      OneSignal.push(["init", {
-        appId: "1fd418f3-d9a9-44d9-8d06-48febf4a4295",
-        autoRegister: true,
-        notifyButton: {
-          enable: true /* Set to false to hide */
-        }
-      }]);
+      OneSignal.push(function() {
+        OneSignal.init({
+          appId: "1fd418f3-d9a9-44d9-8d06-48febf4a4295",
+        });
+      });
     </script>
   </head>
   <body>
