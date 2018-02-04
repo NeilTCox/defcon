@@ -14,7 +14,8 @@ router.get('/', function(req, res, next) {
 });
 
 
-router.get('/:type', function(req, res, next) {
+router.post('/:type', function(req, res, next) {
+  console.log('IN ADMIN GET');
   console.log(req.body.location);
   if (req.params.type == 'wildfire') {
     var type = 'Wild Fire';
