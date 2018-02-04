@@ -34,7 +34,7 @@ router.get('/:type', function(req, res, next) {
       included_segments: ['All']
     },
     attachments: {
-      url: `/${req.params.type}`
+      url: `/${req.params.type}/${req.body.location}`
     }
   }).then(success => {
     res.redirect('/admin_dash');

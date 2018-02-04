@@ -38,7 +38,7 @@
 
   <div class="container">
     <div class="row">
-      <h1>ADMINISTRATOR'S DASHBOARD</h1>
+      <h1>Administrator Dashboard</h1>
     </div>
 
     <div class="row">
@@ -61,10 +61,12 @@
           <div class="card-block">
             <h4 class="card-title">WildFire</h4>
             <div class="form-group" >
-              <label for="exampleInputEmail1" color="white">Location</label>
-              <input type="string" class="form-control" name="location" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Address, zip code, city, etc." required>
-            </br>
-              <button type="submit" class="btn btn-primary">Generate</button>
+              <form class="disaster-form" action="/admin/wildfire" method="get">
+                <label for="exampleInputEmail1" color="white">Location</label>
+                <input type="text" class="form-control" name="location" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Address, zip code, city, etc." required>
+                </br>
+                <button type="submit" class="btn btn-primary">Generate</button>
+              </form>
             </div>
           </div>
         </div>
@@ -78,10 +80,12 @@
           <div class="card-block">
             <h4 class="card-title">Flash Flood</h4>
             <div class="form-group" >
-              <label for="exampleInputEmail1" color="white">Location</label>
-              <input type="string" class="form-control" name="location" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="Address, zip code, city, etc." required>
-            </br>
-              <button type="submit" class="btn btn-primary">Generate</button>
+              <form class="disaster-form" action="/admin/flood" method="get">
+                <label for="exampleInputEmail1" color="white">Location</label>
+                <input type="text" class="form-control" name="location" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="Address, zip code, city, etc." required>
+                </br>
+                <button type="submit" class="btn btn-primary">Generate</button>
+              </form>
             </div>
           </div>
           </div>
@@ -95,10 +99,12 @@
             <div class="card-block">
               <h4 class="card-title">Missile Threat</h4>
               <div class="form-group" >
-                <label for="exampleInputEmail1" color="white">Location</label>
-                <input type="string" class="form-control" name="location" id="exampleInputEmail3" aria-describedby="emailHelp" placeholder="Address, zip code, city, etc." required>
-              </br>
-                <button type="submit" class="btn btn-primary">Generate</button>
+                <form class="disaster_form" action="/admin/missile" method="get">
+                  <label for="exampleInputEmail1" color="white">Location</label>
+                  <input type="text" class="form-control" name="location" id="exampleInputEmail3" aria-describedby="emailHelp" placeholder="Address, zip code, city, etc." required>
+                  </br>
+                  <button type="submit" class="btn btn-primary">Generate</button>
+                </form>
               </div>
             </div>
           </div>
