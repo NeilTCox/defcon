@@ -1,5 +1,3 @@
-alert('we in main folks');
-alert('we changed');
 $(function() {
   $('.list-inline').on('click', '#shelterButton', function(event){
     alert('one');
