@@ -4,10 +4,11 @@ body {
   text-align: center;
   font-weight: bold;
   font: 20px "Trebuchet MS", Helvetica, sans-serif;
-  background-repeat: no-repeat;
   background-attachment: fixed;
 
 }
+
+
 
 h1 {
   color: white;
@@ -36,3 +37,8 @@ p {
 a {
   color: #00B7FF;
 }
+
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+
+/* Optional: Makes the sample page fill the window. */

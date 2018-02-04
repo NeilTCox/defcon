@@ -8,9 +8,8 @@ router.get('/', function(req, res, next) {
   info:'Make sure you enable your browser notifications',
   submit: 'Get Notifications',
   other_option: 'Use Current Location'});
-
-
 });
+
 
 router.get('/nuclearstrike', function(req, res, next){
   res.render('nuclearstrike', { alert_desc: 'BALLISTIC MISSLE THREAT INBOUND TO HAWAII. SEEK IMMEDIATE SHELTER. THIS IS NOT A DRILL'});

@@ -2,10 +2,21 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
     <title><%= title %></title>
     <script src="/javascripts/main.js"></script>
 
+    <!-- OneSignal -->
+    <link rel="manifest" href="/manifest.json" />
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+      var OneSignal = window.OneSignal || [];
+      OneSignal.push(function() {
+        OneSignal.init({
+          appId: "1fd418f3-d9a9-44d9-8d06-48febf4a4295",
+        });
+      });
+    </script>
   </head>
   <body>
 
@@ -14,20 +25,18 @@
       </div>
       <div class="col">
         <h1><%= title %></h1>
-        <p><%= desc%></p>
+        <p>Real time emergency </p>
         <form>
           <div class="form-group">
             <input type="zipcode" class="form-control" id="zipcode" aria-describedby="ZipcodeHelp" placeholder="Enter a zip code">
           </div>
-        <label><%= info%></label>
-          <button type="submit" class="btn btn-danger"><%= submit%></button>
+          <button type="submit" class="btn btn-danger">Submit</button>
           <hr class="my-4">
-          <button type="submit" class="btn btn-danger"><%= other_option%></button>
+          <button type="submit" class="btn btn-danger">Use Current Location</button>
         </form>
     </div>
     <div class="col">
     </div>
   </div>
-
   </body>
 </html>
