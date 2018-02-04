@@ -34,8 +34,8 @@ router.get('/missile', function(req, res, next){
 });
 
 
-router.get('/:disaster', function(req, res, next) {
-  res.render(req.params.disaster);
+router.get('/:disaster/:location', function(req, res, next) {
+  res.render(req.params.disaster, {location: req.params.location});
 });
 
 module.exports = router;
