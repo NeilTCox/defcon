@@ -1,6 +1,4 @@
-
-
-$(function() {
+$(document).ready(function () {
   $('.list-inline').on('click', '#shelterButton', function(event){
 
     $("#locationId").addClass("hidden");
@@ -25,4 +23,6 @@ $(function() {
 
     $("#hospitalId").removeClass("hidden");
   });
+
+
 });
