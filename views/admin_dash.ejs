@@ -11,37 +11,79 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://ajax.microsoft.com/ajax/jQuery/jquery-1.4.2.min.js"></script>
     <script src="/javascripts/main.js"></script>
-    <title>Admin Dashboard</title>
-  </head>
 
-  <body>
+    <!-- <script>
+      $(document).ready(function(){
 
-    <div class="container">
-      <div class="row">
-        <h1>ADMINISTRATOR'S DASHBOARD</h1>
-      </div>
+        $(".btn").toggle(
+          function(){$(".card").fadeOut();
+                      $(".col-centered").fadeOut()
+                      $(".col").fadeOut()
+                      $(".form-group").show("slow")
+                      $(".form-group").fadeIn("slow")
+                    },
+          function(){$(".card").fadeIn();
+                      $(".col-centered").fadeIn()
+                      $(".col").fadeIn()
+                      $(".form-group").hide("slow")
+                      $(".form-group").fadeOut("slow")
+                    });
+    });
 
-      <div class="row">
-      </div>
-      <hr class="my-4">
+  </script> -->
+  <title>Admin Dashboard</title>
+</head>
 
-      <div class="row">
-        <h3>Generate an alert</h3>
-      </div>
+<body>
 
-      <div class="row">
-      </br>
-      </div>
+  <div class="container">
+    <div class="row">
+      <h1>ADMINISTRATOR'S DASHBOARD</h1>
+    </div>
 
-      <div class="row justify-content-md-center">
+    <div class="row">
+    </div>
+    <hr class="my-4">
 
-        <div class="col-centered">
-          <div class="card" style="width: 22.5rem;">
-            <img class="card-img-top" src="/images/forest_fire.jpeg" alt="Card image cap" height="200">
-            <div class="card-block">
-              <h4 class="card-title">WildFire</h4>
-              <a href="/admin/wildfire" class="btn btn-primary">Go somewhere</a>
+    <div class="row">
+      <h3>Generate an alert</h3>
+    </div>
+
+    <div class="row">
+    </br>
+    </div>
+
+    <div class="row justify-content-md-center">
+
+      <div class="col-centered">
+        <div class="card" style="width: 22.5rem;">
+          <img class="card-img-top" src="/images/forest_fire.jpeg" alt="Card image cap" height="200">
+          <div class="card-block">
+            <h4 class="card-title">WildFire</h4>
+            <div class="form-group" >
+              <label for="exampleInputEmail1" color="white">Location</label>
+              <input type="string" class="form-control" name="location" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Address, zip code, city, etc." required>
+            </br>
+              <button type="submit" class="btn btn-primary">Generate</button>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col"></div>
+
+      <div class="col-centered">
+        <div class="card" style="width: 22.5rem;">
+          <img class="card-img-top" src="/images/flood-warning.jpg" alt="Card image cap" height="200">
+          <div class="card-block">
+            <h4 class="card-title">Flash Flood</h4>
+            <div class="form-group" >
+              <label for="exampleInputEmail1" color="white">Location</label>
+              <input type="string" class="form-control" name="location" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="Address, zip code, city, etc." required>
+            </br>
+              <button type="submit" class="btn btn-primary">Generate</button>
+            </div>
+          </div>
           </div>
         </div>
 
@@ -49,28 +91,28 @@
 
         <div class="col-centered">
           <div class="card" style="width: 22.5rem;">
-            <img class="card-img-top" src="/images/flood-warning.jpg" alt="Card image cap" height="200">
+            <img class="card-img-top" src="/images/missile.jpg" alt="Card image cap" height="200">
             <div class="card-block">
-              <h4 class="card-title">Flash Flood</h4>
-              <a href="/admin/flood" class="btn btn-primary">Go somewhere</a>
-            </div>
-            </div>
-          </div>
-
-          <div class="col"></div>
-
-          <div class="col-centered">
-            <div class="card" style="width: 22.5rem;">
-              <img class="card-img-top" src="/images/missile.jpg" alt="Card image cap" height="200">
-              <div class="card-block">
-                <h4 class="card-title">Missile Threat</h4>
-                <a href="/admin/missile" class="btn btn-primary">Go somewhere</a>
+              <h4 class="card-title">Missile Threat</h4>
+              <div class="form-group" >
+                <label for="exampleInputEmail1" color="white">Location</label>
+                <input type="string" class="form-control" name="location" id="exampleInputEmail3" aria-describedby="emailHelp" placeholder="Address, zip code, city, etc." required>
+              </br>
+                <button type="submit" class="btn btn-primary">Generate</button>
               </div>
             </div>
           </div>
+        </div>
 
-    </div>
+      <!-- <div class="form-group" >
+        <label for="exampleInputEmail1" color="white">Location</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="locationHelp" class="form-text text-muted">Address, zip code, city, etc.</small>
+        <a href="#" class="btn btn-primary" >submit</a>
+      </div> -->
 
-  </body>
+  </div>
+
+</body>
 
 </html>
