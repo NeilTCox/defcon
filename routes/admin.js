@@ -15,6 +15,7 @@ router.get('/', function(req, res, next) {
 
 
 router.get('/:type', function(req, res, next) {
+  console.log(req.body.location);
   if (req.params.type == 'wildfire') {
     var type = 'Wild Fire';
   }
@@ -38,8 +39,9 @@ router.get('/:type', function(req, res, next) {
     }
   }).then(success => {
     console.log('IN SUCCESS');
-    res.render('admin_dash');
+    res.redirect('/admin');
   });
+  res.redirect('/admin');
 });
 
 module.exports = router;
