@@ -1,6 +1,5 @@
 $(function () {
   $('.list-inline').on('click', '#shelterButton', function(event){
-    alert('one')
     $("#locationId").addClass("hidden");
     $("#hospitalId").addClass("hidden");
     $("#foodId").addClass("hidden");
