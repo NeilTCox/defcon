@@ -37,7 +37,7 @@ router.get('/:type', function(req, res, next) {
       url: `/${req.params.type}/${req.body.location}`
     }
   }).then(success => {
-    res.redirect('/admin_dash');
+    res.redirect('/admin');
   });
 });
 
