@@ -7,14 +7,16 @@
     <script src="/javascripts/main.js"></script>
 
     <!-- OneSignal -->
-    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async='async'></script>
     <script>
       var OneSignal = window.OneSignal || [];
-      OneSignal.push(function() {
-        OneSignal.init({
-          appId: "1fd418f3-d9a9-44d9-8d06-48febf4a4295",git
-        });
-      });
+      OneSignal.push(["init", {
+        appId: "YOUR_APP_ID",
+        autoRegister: false, /* Set to true to automatically prompt visitors */
+        notifyButton: {
+            enable: true /* Set to false to hide */
+        }
+      }]);
     </script>
   </head>
   <body>
