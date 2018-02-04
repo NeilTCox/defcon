@@ -37,8 +37,7 @@ router.get('/:type', function(req, res, next) {
       url: `/${req.params.type}`
     }
   }).then(success => {
-      console.log('SUCCESS!');
-      res.end();
+    res.redirect('/');
   });
 });
 
