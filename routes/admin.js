@@ -13,18 +13,7 @@ router.get('/', function(req, res, next) {
   res.render('admin_dash');
 });
 
-<<<<<<< HEAD
-router.get('/admin/:location/:zip', function(req, res, next) {
-  var disaster = {
-    zip: req.params.zip,
-    location: req.params.location
-  };
-  res.send(zip);
-});
 
-
-
-=======
 router.get('/:type', function(req, res, next) {
   console.log('in ' + req.params.type + ' route');
   // send a notification
@@ -44,5 +33,4 @@ router.get('/:type', function(req, res, next) {
   });
 });
 
->>>>>>> 267c0bd1cfb61956fe8e2d39596a13a6a18b103a
 module.exports = router;
